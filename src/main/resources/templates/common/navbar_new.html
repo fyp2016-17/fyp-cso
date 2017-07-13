@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<!--<div th:fragment="common-navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">-->
+    <!--<div class="container">-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li class="active"><a th:text="#{navbar.home.text}" href="/"></a></li>-->
+                <!--<li><a th:text="#{navbar.about.text}" href="/about"></a></li>-->
+                <!--<li><a th:text="#{navbar.contact.text}" href="/contact"></a></li>-->
+            <!--</ul>-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li th:if="${#authorization.expression('!isAuthenticated()')}">-->
+                    <!--<a th:href="@{/login}" th:text="#{navbar.login.text}" />-->
+                <!--</li>-->
+                <!--<li th:if="${#authorization.expression('isAuthenticated()')}">-->
+                    <!--<form id="f" th:action="@{/logout}" method="post" role="form" class="navbar-form">-->
+                        <!--<button type="submit" th:text="#{navbar.logout.text}" class="btn btn-primary" />-->
+                    <!--</form>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>&lt;!&ndash;/.nav-collapse &ndash;&gt;-->
+    <!--</div>-->
+<!--</div>-->
+
+<div th:fragment="common-navbar-new">
+<header class="header logo-top full-black-bg black-bg">
+    <div class="header-top gray-bg">
+        <div class="container">
+            <div class="top-inner">
+                <a class="navbar-brand hidden-xs pull-left" href="#"><img th:src="@{/images/index/logo.png}" alt="Logo" /></a>
+                <div class="top-sitemap text-right">
+                    <div class="top-info">
+                        <span><i class="fa fa-phone"></i> Call us Now: (+61) 00854 3251</span>
+                        <span><i class="fa fa-envelope"></i> <a href="#">Get a Free Quote</a></span>
+                        <span><i class="fa fa-clock-o"></i> MON - FRI: 09:00 - 20:00</span>
+                    </div><!-- /.top-info -->
+
+
+
+
+                        <div class="has-dropdown" th:if="${#authorization.expression('!isAuthenticated()')}">
+                            <a th:href="@{/signup?planId=1}"><i class="fa fa-user"></i> Sign Up</a>
+                            <a th:href="@{/login}"><i class="fa fa-lock"></i> Login</a>
+                        </div>
+                        <!--<a th:href="@{/login}" th:text="#{navbar.login.text}" />-->
+                    <!--<li >-->
+                        <!--<form id="f" th:action="@{/logout}" method="post" role="form" class="navbar-form">-->
+                            <!--<button type="submit" th:text="#{navbar.logout.text}" class="btn btn-primary" />-->
+                            <div class="has-dropdown" th:if="${#authorization.expression('isAuthenticated()')}">
+                                <form id="f" th:action="@{/logout}" method="post" role="form" class="navbar-form">
+                                    <button type="submit" th:text="#{navbar.logout.text}" class="btn btn-primary" />
+                                </form>
+                            </div>
+                        <!--</form>-->
+                    <!--</li>-->
+
+                    <!--<div class="has-dropdown">-->
+                        <!---->
+                        <!--<div class="dropdown">-->
+                            <!--<form name="login" id="login" action="#" method="post">-->
+                                <!--<p class="form-row form-row-wide">-->
+                                    <!--<input type="text" name="name" class="name" value="" placeholder="Username/Email" required="" />-->
+                                <!--</p>-->
+                                <!--<p class="form-row form-row-wide">-->
+                                    <!--<input type="password" name="pwd" id="user_pass-3" class="password" value="" placeholder="Password"/>-->
+                                <!--</p>-->
+                                <!--<p class="form-row form-row-wide">-->
+                                    <!--<label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme"/> Remember me </label>-->
+                                    <!--<input type="submit" class="btn" value="Sign In"/>-->
+                                <!--</p>-->
+
+                                <!--<p class="form-row form-row-wide">-->
+                                    <!--<a href="#" class="forgot-psd">Forgot Password?</a>-->
+
+                                    <!--<span class="additional-method pull-right">-->
+                                            <!--<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>-->
+                                            <!--<a class="google" href="#"><i class="fa fa-google"></i></a>-->
+                                        <!--</span>-->
+                                <!--</p>-->
+
+                                <!--<p class="form-row form-row-wide">-->
+                                        <!--<span class="sign-up">-->
+                                            <!--Don't have account? <a th:href="@{/signup?planId=1}">Sign up</a>-->
+                                        <!--</span>-->
+                                <!--</p>-->
+
+                            <!--</form>-->
+                        <!--</div>&lt;!&ndash; /.dropdown &ndash;&gt;-->
+                    <!--</div>-->
+                </div><!-- /.top-sitemap -->
+            </div><!-- /.top-inner -->
+        </div><!-- /.container -->
+    </div><!-- /.header-top -->
+
+    <div class="header-bottom">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header visible-xs">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="./"><img th:src="@{/images/index/logo.png}" alt="Logo" /></a>
+                </div>
+
+                <div id="menu" class="main-menu navbar-collapse pull-left collapse" aria-expanded="false" style="height: 1px;">
+
+                    <ul class="nav navbar-nav">
+
+                        <li class="menu-item-has-children">
+                            <a th:href="@{/}">Home</a>
+                            <ul class="sub-menu children">
+                                <li><a th:href="@{/}">Home</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="C:\Users\Abubakr\Desktop\FYP GUI\NEW DESIGN\services.html">Services</a>
+                            <ul class="sub-menu children">
+                                <li><a href="C:\Users\Abubakr\Desktop\FYP GUI\NEW DESIGN\services.html">Services</a></li>
+                                <li><a href="C:\Users\Abubakr\Desktop\FYP GUI\NEW DESIGN\service_details.html">Service Details</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item-has-children active">
+                            <a href="C:\Users\Abubakr\Desktop\FYP GUI\NEW DESIGN\about.html">About Us</a>
+                            <ul class="sub-menu children">
+                                <li><a href="C:\Users\Abubakr\Desktop\FYP GUI\NEW DESIGN\team.html">Team</a></li>
+                                <li><a href="C:\Users\Abubakr\Desktop\FYP GUI\NEW DESIGN\about.html">About us</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+
+
+
+                    </ul>
+
+                    <div class="top-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-vimeo"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-rss"></i></a>
+                    </div>
+
+                    <div class="search-box pull-right">
+                        <span class="search-icon"><i class="ti-search"></i></span><!-- /.search-icon -->
+                        <form class="search-form" method="get" action="#">
+                            <input name="s" type="text" class="search-input" size="20" maxlength="20" placeholder="Search Here ...." required="" />
+                            <input type="submit" name="submit" class="search-submit" />
+                        </form><!-- /.search-form -->
+                    </div>
+                </div><!-- /.navbar-collapse -->
+            </nav><!-- /.navbar -->
+        </div><!-- /.container -->
+    </div><!-- /.header-bottom -->
+</header>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

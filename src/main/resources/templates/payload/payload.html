@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/header_new :: common-header-new"/>
+<body>
+
+<div th:replace="common/navbar_new :: common-navbar-new"/>
+
+<div class="container">
+    <section class="slider-section">
+        <div class="section-padding">
+            <div class="container">
+
+                <div id="banner-slider" class="banner-slider carousel slide text-left">
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="item item-4">
+                            <img th:src="@{/images/index/4.jpg}" alt="Slider Image"></img>
+                            <div class="inner-contents">
+                                <div class="inner-texts">
+                                    <h2 class="item-title">Cast is the best Choice</h2><!-- /.item-title -->
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-check-circle-o"></i>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check-circle-o"></i>
+                                            Duis aute irure dolor in reprehenderit in voluptate velit
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check-circle-o"></i>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-check-circle-o"></i>
+                                            Duis aute irure dolor in reprehenderit in voluptate velit
+                                        </li>
+                                    </ul>
+
+                                    <div class="btn-container">
+                                        <a href="#" class="btn">Get a quote</a>
+                                    </div><!-- /.btn-container -->
+                                </div><!-- /.inner-texts -->
+                                <img class="inner-image" th:src="@{/images/index/4.png}" alt="Slider Image"></img>
+                            </div><!-- /.inner-contents -->
+                        </div><!-- /.item -->
+
+                        <div class="item item-3">
+                            <img th:src="@{/images/index/3.jpg}" alt="Slider Image"></img>
+                            <div class="inner-contents">
+                                <div class="inner-texts">
+                                    <h2 class="item-title">We Build to Satisfy you</h2><!-- /.item-title -->
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    </p><!-- /.description -->
+
+                                    <div class="btn-container">
+                                        <a href="#" class="btn">Get a quote</a>
+                                    </div><!-- /.btn-container -->
+                                </div><!-- /.inner-texts -->
+                            </div><!-- /.inner-contents -->
+                        </div><!-- /.item -->
+
+                        <div class="item item-1 active">
+                            <img th:src="@{/images/index/1.jpg}" alt="Slider Image"></img>
+                            <div class="inner-contents">
+                                <div class="inner-texts">
+                                    <h2 class="item-title">We Build Dream Projects</h2><!-- /.item-title -->
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    </p><!-- /.description -->
+
+                                    <div class="btn-container">
+                                        <a href="#" class="btn">Get a quote</a>
+                                    </div><!-- /.btn-container -->
+                                </div><!-- /.inner-texts -->
+
+                                <img class="inner-image" th:src="@{/images/index/1.png}" alt="Slider Image"></img>
+                            </div><!-- /.inner-contents -->
+                        </div><!-- /.item -->
+                        <div class="item item-2">
+                            <img th:src="@{/images/index/2.jpg}" alt="Slider Image"></img>
+                            <div class="inner-contents">
+                                <div class="inner-texts">
+                                    <h2 class="item-title">We deliver the best</h2><!-- /.item-title -->
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    </p><!-- /.description -->
+
+                                    <div class="btn-container">
+                                        <a href="#" class="btn">Get a quote</a>
+                                        <a href="#" class="btn black">Our Services</a>
+                                    </div><!-- /.btn-container -->
+                                </div><!-- /.inner-texts -->
+
+                                <img class="inner-image" th:src="@{/images/index/2.png}" alt="Slider Image" ></img>
+                            </div><!-- /.inner-contents -->
+                        </div><!-- /.item -->
+                    </div><!-- /.carousel-inner -->
+
+                    <a class="left carousel-control" href="#banner-slider" role="button" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="right carousel-control" href="#banner-slider" role="button" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div><!-- /#banner-slider -->
+
+            </div><!-- /.container -->
+        </div><!-- /.section-padding -->
+    </section><!-- /.slider-section -->
+
+
+
+
+    <section class="about-us about-us-4">
+        <div class="section-padding">
+            <div class="container">
+                <div class="col-sm-3">
+                    <div class="item">
+                        <a href="#">
+                            <i class="ti-clipboard"></i>
+                            <h4 class="item-title">Project Planing</h4><!-- /.item-title -->
+                        </a>
+                    </div><!-- /.item -->
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="item">
+                        <a href="#">
+                            <i class="ti-ruler-pencil"></i>
+                            <h4 class="item-title">Construction</h4><!-- /.item-title -->
+                        </a>
+                    </div><!-- /.item -->
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="item">
+                        <a href="#">
+                            <i class="ti-paint-roller"></i>
+                            <h4 class="item-title">Home Renovation</h4><!-- /.item-title -->
+                        </a>
+                    </div><!-- /.item -->
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="item">
+                        <a href="#">
+                            <i class="ti-notepad"></i>
+                            <h4 class="item-title">Consultancy</h4><!-- /.item-title -->
+                        </a>
+                    </div><!-- /.item -->
+                </div>
+            </div><!-- /.container -->
+        </div><!-- /.section-padding -->
+    </section><!-- /.about-us -->
+
+
+
+
+    <section class="features">
+        <div class="section-padding">
+            <div class="container">
+                <div class="items">
+                    <div class="col-sm-4">
+                        <div class="item">
+                            <div class="item-thumb"><img th:src="@{/images/index/1(1).jpg}" alt="Features Image"></img></div><!-- /.item-thumb -->
+                            <div class="item-details">
+                                <h3 class="item-title">Effective Teamwork</h3><!-- /.item-title -->
+                                <p class="description">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                                </p><!-- /.description -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item -->
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="item">
+                            <div class="item-thumb"><img th:src="@{/images/index/2(1).jpg}" alt="Features Image"></img></div><!-- /.item-thumb -->
+                            <div class="item-details">
+                                <h3 class="item-title">Qualified Experts</h3><!-- /.item-title -->
+                                <p class="description">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                                </p><!-- /.description -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item -->
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="item">
+                            <div class="item-thumb"><img th:src="@{/images/index/3(1).jpg}" alt="Features Image"></img></div><!-- /.item-thumb -->
+                            <div class="item-details">
+                                <h3 class="item-title">Unlimited Suport 24 x 7</h3><!-- /.item-title -->
+                                <p class="description">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                                </p><!-- /.description -->
+                            </div><!-- /.item-details -->
+                        </div><!-- /.item -->
+                    </div>
+                </div><!-- /.items -->
+            </div><!-- /.container -->
+        </div><!-- /.section-padding -->
+    </section><!-- /.features -->
+
+
+
+
+    <section class="portfolio">
+        <div class="section-padding">
+            <div class="container">
+                <div class="inner-bg">
+                    <div class="section-title">Recent Projects</div><!-- /.section-title -->
+                    <div class="padding">
+                        <div class="items">
+                            <div class="col-sm-3">
+                                <div class="item">
+                                    <img th:src="@{/images/index/1(2).jpg}" alt="Item Image"></img>
+                                    <div class="item-hover">
+                                        <div class="hover-details">
+                                            <h3 class="item-title"><a href="#">General Builder</a></h3><!-- /.item-title -->
+                                            <span class="category">Wooden</span><!-- /.category -->
+                                        </div><!-- /.hover-details -->
+                                    </div><!-- /.item-hover -->
+                                </div><!-- /.item -->
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="item">
+                                    <img th:src="@{/images/index/2(2).jpg}" alt="Item Image"></img>
+                                    <div class="item-hover">
+                                        <div class="hover-details">
+                                            <h3 class="item-title"><a href="#">Refurbishment</a></h3><!-- /.item-title -->
+                                            <span class="category">Category</span><!-- /.category -->
+                                        </div><!-- /.hover-details -->
+                                    </div><!-- /.item-hover -->
+                                </div><!-- /.item -->
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="item">
+                                    <img th:src="@{/images/index/3(2).jpg}" alt="Item Image"></img>
+                                    <div class="item-hover">
+                                        <div class="hover-details">
+                                            <h3 class="item-title"><a href="#">Energy Repair</a></h3><!-- /.item-title -->
+                                            <span class="category">Interior</span><!-- /.category -->
+                                        </div><!-- /.hover-details -->
+                                    </div><!-- /.item-hover -->
+                                </div><!-- /.item -->
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="item">
+                                    <img th:src="@{/images/index/4(1).jpg}" alt="Item Image"></img>
+                                    <div class="item-hover">
+                                        <div class="hover-details">
+                                            <h3 class="item-title"><a href="#">Interior</a></h3><!-- /.item-title -->
+                                            <span class="category">Category</span><!-- /.category -->
+                                        </div><!-- /.hover-details -->
+                                    </div><!-- /.item-hover -->
+                                </div><!-- /.item -->
+                            </div>
+                        </div><!-- /.items -->
+                    </div><!-- /.padding -->
+                </div><!-- /.inner-bg -->
+            </div><!-- /.container -->
+        </div><!-- /.section-padding -->
+    </section><!-- /.portfolio -->
+
+
+
+
+    <section class="choose">
+        <div class="section-padding">
+            <div class="container">
+                <div class="items">
+                    <div class="col-sm-6" style="min-height: 360px;">
+                        <div class="inner-bg">
+                            <h2 class="section-title">Our Strategies</h2><!-- /.section-title -->
+                            <div class="padding">
+                                <div class="item media">
+                                    <div class="item-icon media-left"><i class="ti-package"></i></div><!-- /.item-icon -->
+                                    <div class="item-details media-body">
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p><!-- /.description -->
+                                    </div><!-- /.item-details -->
+                                </div><!-- /.item -->
+
+                                <div class="item media">
+                                    <div class="item-icon media-left"><i class="ti-server"></i></div><!-- /.item-icon -->
+                                    <div class="item-details media-body">
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p><!-- /.description -->
+                                    </div><!-- /.item-details -->
+                                </div><!-- /.item -->
+
+                                <div class="item media">
+                                    <div class="item-icon media-left"><i class="ti-shield"></i></div><!-- /.item-icon -->
+                                    <div class="item-details media-body">
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p><!-- /.description -->
+                                    </div><!-- /.item-details -->
+                                </div><!-- /.item -->
+                            </div><!-- /.padding -->
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6" style="min-height: 360px;">
+                        <div class="inner-bg">
+                            <div class="padding">
+                                <div id="testimonial-slider" class="testimonial-slider carousel slide">
+
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#testimonial-slider" data-slide-to="0" class="active"></li>
+                                        <li data-target="#testimonial-slider" data-slide-to="1" class=""></li>
+                                        <li data-target="#testimonial-slider" data-slide-to="2" class=""></li>
+                                    </ol>
+
+                                    <div class="carousel-inner">
+                                        <div class="item next left">
+                                            <div class="author-avatar">
+                                                <img class="img-circle" th:src="@{/images/index/1(3).jpg}" alt="Author Avatar"></img>
+                                            </div><!-- /.author-avatar -->
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p><!-- /.description -->
+                                            <div class="author-details">
+                                                <h4 class="name">Albert Henry</h4><!-- /.name -->
+                                                <span class="designation">Google Inc.</span><!-- /.designation -->
+                                            </div><!-- /.author-details -->
+                                        </div><!-- /.item -->
+
+                                        <div class="item">
+                                            <div class="author-avatar">
+                                                <img class="img-circle" th:src="@{/images/index/2(3).jpg}" alt="Author Avatar"></img>
+                                            </div><!-- /.author-avatar -->
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p><!-- /.description -->
+                                            <div class="author-details">
+                                                <h4 class="name">Vincent Flores</h4><!-- /.name -->
+                                                <span class="designation">Google Inc.</span><!-- /.designation -->
+                                            </div><!-- /.author-details -->
+                                        </div><!-- /.item -->
+
+                                        <div class="item active left">
+                                            <div class="author-avatar">
+                                                <img class="img-circle" th:src="@{/images/index/3(3).jpg}" alt="Author Avatar"></img>
+                                            </div><!-- /.author-avatar -->
+                                            <p class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p><!-- /.description -->
+                                            <div class="author-details">
+                                                <h4 class="name">Bobby Barnes</h4><!-- /.name -->
+                                                <span class="designation">Google Inc.</span><!-- /.designation -->
+                                            </div><!-- /.author-details -->
+                                        </div><!-- /.item -->
+
+                                    </div><!-- /.carousel-inner -->
+                                </div><!-- /#testimonial-slider -->
+                            </div><!-- /.padding -->
+                        </div>
+                    </div>
+                </div><!-- /.items -->
+            </div><!-- /.container -->
+        </div><!-- /.section-padding -->
+    </section><!-- /.choose -->
+
+
+
+
+    <section class="partners text-center">
+        <div class="section-padding">
+            <div class="container">
+                <div class="items">
+                    <div class="item"><a href="#"><img th:src="@{/images/index/5.png}" alt="Partners Logo"></img></a></div><!-- /.item -->
+                    <div class="item"><a href="#"><img th:src="@{/images/index/6.png}" alt="Partners Logo"></img></a></div><!-- /.item -->
+                    <div class="item"><a href="#"><img th:src="@{/images/index/7.png}" alt="Partners Logo"></img></a></div><!-- /.item -->
+                    <div class="item"><a href="#"><img th:src="@{/images/index/8.png}" alt="Partners Logo"></img></a></div><!-- /.item -->
+                    <div class="item"><a href="#"><img th:src="@{/images/index/9.png}" alt="Partners Logo"></img></a></div><!-- /.item -->
+                </div><!-- /.items -->
+            </div><!-- /.container -->
+        </div><!-- /.section-padding -->
+    </section><!-- /.partners -->
+
+
+
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="section-padding">
+                <div class="container">
+                    <div class="inner-bg">
+                        <div class="padding">
+                            <div class="col-sm-3">
+                                <div class="widget widget_contacts">
+                                    <h3 class="widget-title">Contacts</h3><!-- /.widget-title -->
+                                    <div class="widget-details">
+                                        <address>
+                                            <span>
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>
+                                                    121 King Street, Melbourne VIC 3000, Australia
+                                                </span>
+                                            </span>
+                                            <span>
+                                                <i class="fa fa-envelope-square"></i>
+                                                <span>
+                                                    +61 3 8376 6284
+                                                </span>
+                                            </span>
+                                            <span>
+                                                <i class="fa fa-phone-square"></i>
+                                                <span>
+                                                    <a href="#">contact@cast.com</a>
+                                                </span>
+                                            </span>
+                                        </address>
+                                    </div><!-- /.widget-details -->
+                                </div><!-- /.widget -->
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="widget widget_info">
+                                    <h3 class="widget-title">Company Info</h3><!-- /.widget-title -->
+                                    <div class="widget-details">
+                                        <a href="#"><i class="ti-arrow-right"></i>About</a>
+                                        <a href="#"><i class="ti-arrow-right"></i>Services</a>
+                                        <a href="#"><i class="ti-arrow-right"></i>Projects</a>
+                                        <a href="#"><i class="ti-arrow-right"></i>News</a>
+                                        <a href="#"><i class="ti-arrow-right"></i>Shop</a>
+                                        <a href="#"><i class="ti-arrow-right"></i>Privacy</a>
+                                        <a href="#"><i class="ti-arrow-right"></i>Sitemap</a>
+                                        <a href="#"><i class="ti-arrow-right"></i>Partners</a>
+                                    </div><!-- /.widget-details -->
+                                </div><!-- /.widget -->
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="widget widget_office_hours">
+                                    <h3 class="widget-title">Office Hours</h3><!-- /.widget-title -->
+                                    <div class="widget-details">
+                                        <p>
+                                            Support Hotline is available 24 Hours a day, seven days a week.
+                                        </p>
+                                        <div class="time">
+                                            <span><span class="meta-id">Monday - Friday:</span> 10:00am to 08:00pm</span>
+                                            <span><span class="meta-id">Weekend:</span> 12:00am to 07:00pm</span>
+                                        </div>
+                                    </div><!-- /.widget-details -->
+                                </div><!-- /.widget -->
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="widget widget_subscribe">
+                                    <h3 class="widget-title">Newsletter</h3><!-- /.widget-title -->
+                                    <div class="widget-details">
+                                        <p>
+                                            We never disclose any email address or any personal data to anyone.
+                                        </p>
+                                        <form class="mc4wp-form" method="post">
+                                            <div class="mc4wp-form-fields">
+                                                <input class="form-control" type="email" name="EMAIL" placeholder="Enter email &amp; subscribe .." required=""></input>
+                                                <input type="submit" class="form-control" name="submit"></input>
+                                            </div>
+                                            <div class="mc4wp-response"></div>
+                                        </form>
+                                    </div><!-- /.widget-details -->
+                                </div><!-- /.widget -->
+                            </div>
+                        </div><!-- /.padding -->
+                    </div><!-- /.inner-bg -->
+                </div><!-- /.container -->
+            </div><!-- /.section-padding -->
+        </div><!-- /.footer-top -->
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright text-left">
+                    <div class="padding">
+                        <!--  © <a href="http://demos.jeweltheme.com/cast/demos.jeweltheme.com/cast">Cast</a> 2017 | Develpoed With Love by <a href="https://jeweltheme.com/">Jewel Theme</a>
+                         <span class="pull-right">Designed by <a href="#">bigpsfan</a></span> -->
+                    </div><!-- /.padding -->
+                </div><!-- /.copyright -->
+            </div><!-- /.container -->
+        </div><!-- /.footer-bottom -->
+    </footer><!-- /.footer-bottom -->
+</div><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<div th:replace="common/header :: before-body-scripts" />
+</body>
+</html>

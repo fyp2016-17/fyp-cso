@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="common-header-new">
+    <title>Construction site</title>
+
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
+
+    <!-- Custom Style for the template -->
+    <link type="text/css" th:href="@{/css/style.css}" rel="stylesheet" media="screen"/>
+    <link type="text/css" th:href="@{/css/owl.carousel.css}" rel="stylesheet" media="screen"/>
+    <link type="text/css" th:href="@{/css/responsive.css}" rel="stylesheet" media="screen"/>
+    <link type="text/css" th:href="@{/css/themes.css}" rel="stylesheet" media="screen"/>
+    <link type="text/css" th:href="@{/css/magnific-popup.css}" rel="stylesheet" media="screen"/>
+    <link type="text/css" th:href="@{/css/fontawesome/css/font-awesome.min.css}" rel="stylesheet" media="screen"/>
+    <link type="text/css" th:href="@{/css/themify/themify-icons.css}" rel="stylesheet" media="screen"/>
+
+</head>
+<div th:fragment="before-body-scripts">
+    <script th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/common.js}"></script>
+    <script th:src="@{/js/gmap3.min.js}"></script>
+    <script th:src="@{/js/js.js}"></script>
+    <script th:src="@{/js/modernizr.custom.js}"></script>
+    <script th:src="@{/js/main.js}"></script>
+    <script th:src="@{/js/stats.js}"></script>
+    <script th:src="@{/js/style.js}"></script>
+    <script th:src="@{/js/plugins.js}"></script>
+    <script th:src="@{/js/util.js}"></script>
+</div>
+</html>
